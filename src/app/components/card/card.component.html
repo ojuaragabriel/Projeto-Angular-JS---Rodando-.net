@@ -1,0 +1,10 @@
+<section class="card">
+  <div>
+    <img [src]="categoryData ? categoryData.pathImage : burgerData.pathImage"
+      [alt]="categoryData ? categoryData.name : burgerData.name">
+  </div>
+  <div class="text">
+    <h2>{{ categoryData ? categoryData.name : burgerData.name }}</h2>
+    <p>{{ categoryData ? categoryData.baseDescription : burgerData.baseDescription }}</p>
+  </div>
+</section>

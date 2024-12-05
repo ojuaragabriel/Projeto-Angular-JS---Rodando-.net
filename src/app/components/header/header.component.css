@@ -1,0 +1,106 @@
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 20px 0;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list ul li {
+  font-weight: 500;
+  font-size: 23px;
+  list-style: none;
+}
+
+.list ul a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.link {
+  color: var(--primary-color);
+  transition: 0.4s ease-in-out;
+}
+
+.link:hover {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: 0.4s ease-in-out;
+}
+
+/* Menu */
+header .modal,
+#hbIcon {
+  display: none;
+}
+
+#hbIcon img,
+header .modal img {
+  width: 25px;
+  height: 25px;
+}
+
+header .modal {
+  background-color: var(--modalBg-color);
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  padding: 2rem;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+header .modal ul li {
+  list-style: none;
+  padding: 0.3rem 0;
+}
+
+header .modal ul li a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem;
+}
+
+header .modal ul li a:hover {
+  color: var(--background-color);
+  background-color: var(--modalBack-color);
+}
+
+#closeModal {
+  cursor: pointer;
+}
+
+header .modal.open {
+  display: flex;
+}
+
+/* Media Q */
+@media (max-width: 801px) {
+  #hbIcon {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .header .list {
+    display: none;
+  }
+}

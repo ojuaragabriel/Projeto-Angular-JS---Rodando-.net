@@ -1,0 +1,37 @@
+<header>
+  <div class="header">
+    <div>
+      <a class="logo" routerLink="/">
+        <img src="../../assets/images/logo.png" alt="burguer mania logo" />
+      </a>
+    </div>
+    <div class="list">
+      <ul class="box">
+        <li><a routerLink="/" class="link">Início</a></li>
+        <li><a routerLink="/category/1" class="link">Categoria</a></li>
+        <li><a routerLink="/menu" class="link">Cardápio</a></li>
+        <li><a routerLink="/location" class="link">Localização</a></li>
+        <li><a routerLink="/contact" class="link">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- Ícone de hambúrguer -->
+    <div id="hbIcon" class="hamburger-menu" (click)="toggleMenu()" *ngIf="!menuOpen">
+      <img src="../../assets/images/hamburguer-menu.png" alt="menu icon H" />
+    </div>
+  </div>
+
+  <!-- MOBILE NAV MODAL -->
+  <div class="modal" [class.open]="menuOpen" *ngIf="menuOpen">
+    <div id="closeModal" (click)="toggleMenu()">
+      <img src="../../assets/images/close.png" alt="close button" />
+    </div>
+    <ul>
+      <li><a routerLink="/">Início</a></li>
+      <li><a routerLink="/category/1">Categoria</a></li>
+      <li><a routerLink="/menu">Cardápio</a></li>
+      <li><a routerLink="/location">Localização</a></li>
+      <li><a routerLink="/contact">Contato</a></li>
+    </ul>
+  </div>
+</header>

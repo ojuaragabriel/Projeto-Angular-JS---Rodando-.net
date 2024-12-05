@@ -1,0 +1,21 @@
+<section>
+  <div class="description">
+    <div>
+      <div>
+        <img [src]="burgerData?.pathImage" [alt]="burgerData?.name">
+      </div>
+      <div class="text">
+        <h2>{{ burgerData?.name }}</h2>
+        <p class="ingredients">{{ burgerData?.baseDescription }}</p>
+        <p class="price">R$ {{burgerData?.price}}</p>
+      </div>
+    </div>
+    <div class="details">
+      <h3>Descrição</h3>
+      <p>{{ burgerData?.fullDescription }}</p>
+    </div>
+  </div>
+  <div>
+    <app-button label="Comprar" styleClass="primaryBtn uppercase" routerLink="/order"></app-button>
+  </div>
+</section>

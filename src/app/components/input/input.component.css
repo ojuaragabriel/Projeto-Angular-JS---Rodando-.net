@@ -1,0 +1,37 @@
+.form {
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-area {
+  padding: 30px 0;
+}
+
+.first-line {
+  padding-bottom: 20px;
+}
+
+.lineForm {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 490px) {
+  .form {
+    max-width: 400px;
+  }
+  .lineForm {
+    flex-direction: column;
+    gap: 0;
+  }
+}

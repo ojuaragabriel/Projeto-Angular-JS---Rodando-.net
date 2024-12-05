@@ -1,0 +1,22 @@
+<section>
+  <div class="title">
+    <h1>Cardápio</h1>
+  </div>
+  <div class="card">
+    <app-card *ngFor="let category of displayedCategories" [categoryData]="category"
+      [routerLink]="['/category', category.id]"></app-card>
+  </div>
+  <div>
+    <app-button label="Ver Cardápio Completo" styleClass="primaryBtn uppercase" *ngIf="!showAll"
+      (click)="showFullMenu()"></app-button>
+  </div>
+
+  <div class="card" *ngIf="showAll">
+    <app-card *ngFor="let category of remainingCategories" [categoryData]="category"
+      [routerLink]="['/category', category.id]"></app-card>
+  </div>
+  <div>
+    <app-button *ngIf="showAll" label="Mostrar Menos" styleClass="primaryBtn uppercase" (click)="showLess()">
+    </app-button>
+  </div>
+</section>

@@ -1,11 +1,6 @@
 # FrontEnd | FullStack ResTIC36  
-=======
+
 ![vs](https://github.com/user-attachments/assets/259489a8-65be-4a28-96fc-c5ec67b2f54d)
-
-## Descrição
->>>>>>> 571d1143c0db3565c238611b2208bef41a356b45
-
-![vs](https://github.com/user-attachments/assets/259489a8-65be-4a28-96fc-c5ec67b2f54d)  
 
 ## Descrição  
 

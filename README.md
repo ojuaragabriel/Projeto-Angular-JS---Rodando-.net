@@ -1,5 +1,3 @@
-
-<<<<<<< HEAD
 # FrontEnd | FullStack ResTIC36  
 =======
 ![vs](https://github.com/user-attachments/assets/259489a8-65be-4a28-96fc-c5ec67b2f54d)
